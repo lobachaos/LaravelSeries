@@ -12,11 +12,6 @@ class SeriesController extends Controller
      */
     public function index()
     {
-        $series = [
-            'primeira',
-            'segunda',
-            'terceira'
-        ];
         return view('series.index', compact('series'));
     }
 
@@ -35,7 +30,7 @@ class SeriesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $nameSerie = $request->input('name');
     }
 
     /**
